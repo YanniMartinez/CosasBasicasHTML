@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- Etiqueta de apertura, le dice al navegador que estamos usando HTML5 -->
+<html>
+    <!-- En primera instancia sólo se colocó la etiqueta, nuestras etiquetas principales son HEAD y BODY-->
+    <head>
+        <meta charset="UTF-8" /> <!--Las etiquetas metas no tienen cierre, pero por buenas prácticas es mejor cerrarlas, en este caso e sel /> -->
+        <title> Mi primera Pagina web</title><!-- Como su nombre lo dice, nos permite poner el titulo de la página -->
+        
+    </head>
+    <body>
+        <!-- Por buena práctica para el SEO sólo usamos 1 H1 -->
+        <h1>Hola mi nombre es Yann</h1> <!-- Las h van de 1 a 6, van de mayor a menor. -->
+        <h2>Hola, soy un H2</h2>
+        <h3>Hola, soy un H3</h3>
+        <h4>Hola, soy un H4</h4>
+        <h5>Hola, soy un H5</h5>
+        <h6>Hola, soy un H6</h6>
+
+        <h3>Tipos de Textos:</h3>
+        Hola soy un texto que no está dentro de un parrafo.
+        <p>Esto es un parrafo</p> <!-- Esta etiqueta es principalmente para textos -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur iure explicabo, quos sit deserunt hic nobis obcaecati dolor minima ipsum. A illum iusto omnis minima? Officiis, dicta vitae? Ad.</p>
+        <!-- Para usar negritas usamos la etiqueta Strong-->
+        <p>Lorem ipsum <strong> sit amet consectetur adipisicing elit.</strong> Pariatur exercitationem corrupti, architecto quae velit id illo sint quaerat praesentium perspiciatis itaque dicta consectetur illum, facere aliquid! Exercitationem veniam vero ea!</p>
+        
+        <!-- Se pone Lorem y presionamos Tab para que autocomplete con un texto prueba -->
+        <!-- La etiqueta em pone en cursivas las letras, es decir, Italicas-->
+        <p>Lorem ipsum, dolor sit <em>amet consectetur adipisicing elit.</em> Suscipit <span>libero aspernatur</span> saepe doloribus officia labore aliquam nobis excepturi ipsa iste provident veniam aut asperiores, earum voluptate quos vitae odio tempore.</p>
+        <!-- span permite diferenciar para utilizar en CSS y resaltarlas, pero directo en HTML no hace nada -->
+
+        <h3>Citas:</h3>
+        <!-- Para hacer citas ponemos blockquote-->
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique omnis commodi provident mollitia cumque? Minus reprehenderit commodi velit illum, iste omnis delectus quibusdam necessitatibus fuga dolore corrupti architecto? Eveniet, repellendus!
+        </blockquote>
+        <!-- La etiqueta hr dibuja una linea horizontal, tampoco tiene etiqueta de cierre, pero la cerrramos.-->
+        <hr />
+
+        <!-- Podemos usar lorem*5 o un número para que genere más o menos texto -->
+        <!-- Por más que pongamos espacios dentro de una P no nos lo dará, debemos usar una etiqueta, se llama Br, no tiene cierre pero la cerrramos por buenas prácticas-->
+        <p> 
+            Where does it come from?
+            <br/> <!-- Representa un  salto de linea -->
+            <br/>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+            <br/>
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        </p>
+
+        <h3>Lista Ordenada:</h3>
+        <!-- Hay 2 tipos de listas, las ordenadas y las deordenadas.-->
+        <ol> <!-- Ordenated List, veremos que nos lista por números-->
+            <li>Perros</li> <!-- List Item -->
+            <li>Gatos</li>
+            <li>Pajaros</li>
+            <li>Osos</li>
+            <li>Peces</li>
+        </ol>
+
+        <h3>Lista Desordenada:</h3>
+        <ul> <!-- unorder List, veremos que nos lo lista por punto-->
+            <li>Perros</li> <!-- List Item -->
+            <li>Gatos</li>
+            <li>Pajaros</li>
+            <li>Osos</li>
+            <li>Peces</li>
+        </ul>
+
+        <h3>Anidación de Listas:</h3>
+        <!-- Podemos hacer SubListas-->
+        <ol> <!-- Ordenated List, veremos que nos lista por números-->
+            <li>Perros:
+                <ol> <!-- De nuevo Lista por números. Será una lista dentro de un elemento-->
+                    <li>Chihuahua</li>
+                    <li>Dalmata</li>
+                    <li>Husky</li>
+                    <li>Labrador</li>
+                    <li>Pastor Alemán</li>
+                </ol>
+            </li> 
+            <li>Gatos:
+                <ul> <!-- Lista por puntos-->
+                    <li>Blanco</li>
+                    <li>Negro</li>
+                    <li>Pardo</li>
+                </ul>
+            </li>
+            <li>Pajaros</li>
+            <li>Osos</li>
+            <li>Peces</li>
+        </ol>
+
+        <hr/>
+        <h3>Imagen:</h3>
+        <!-- Imagen y propiedades:-->
+        <!-- Width se refiere al Ancho, Height significa la altura. Se recomienda modificar sólo un valor para evitar que se deforme la imágen. Permite guardar la proporción de la imágen-->
+        <img src="https://images.unsplash.com/photo-1583634852966-130c15654305?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=730&q=80" alt="Imágen de Maquina Gamer" title="Maquinita Mario bros" width="600" /> <!-- Coloca una imagen, en este caso es mediante un enlace, es otra etiqueta sin cierre. El alt es una descripción de la imagen, Title es un texto aparece cuando el cursos se posa sobre la imágen.-->
+        <img src="Assets/img/Gamer.jpg" width="600"/> <!-- En este caso la imagen está dentro de mi directorio, esa imagen está dentro de la carpeta "img". IMPORTANTE: Poner el formato de la imagen-->
+    </body>
+</html>
+<!-- -->
