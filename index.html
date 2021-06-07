@@ -93,9 +93,27 @@
         <hr/>
         <h3>Imagen:</h3>
         <!-- Imagen y propiedades:-->
-        <!-- Width se refiere al Ancho, Height significa la altura. Se recomienda modificar sólo un valor para evitar que se deforme la imágen. Permite guardar la proporción de la imágen-->
+        <!-- Width se refiere al Ancho, Height significa la altura. Se recomienda modificar sólo un valor para evitar que se deforme la imágen. Permite guardar la proporción de la imágen. Si no se ponel el "alt" se penaliza mucho el SEO-->
         <img src="https://images.unsplash.com/photo-1583634852966-130c15654305?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=730&q=80" alt="Imágen de Maquina Gamer" title="Maquinita Mario bros" width="600" /> <!-- Coloca una imagen, en este caso es mediante un enlace, es otra etiqueta sin cierre. El alt es una descripción de la imagen, Title es un texto aparece cuando el cursos se posa sobre la imágen.-->
         <img src="Assets/img/Gamer.jpg" width="600"/> <!-- En este caso la imagen está dentro de mi directorio, esa imagen está dentro de la carpeta "img". IMPORTANTE: Poner el formato de la imagen-->
+        <!-- ../ nos saca de una carpeta-->
+
+        <!-- Div permite generar bloques. Este tipo de etiquetas permite una distribución entre bloques para que cada uno se centre en algo en especifico. Tendrá sentido en CSS -->
+        <div>
+            Soy un bloque.
+        </div>
+        <div>
+            Soy otro bloque.
+        </div>
+
+        <!-- Este etiqueta se utiliza para poner links. En general puede hacer una redirección. -->
+        <!-- La propiedad href indica a donde se redirige, la propiedad target="self" lo que hace es abrir la página en la misma pestaña. con target="_blank" abré la página en otra pestaña -->
+
+        <a href="https://yanndesigner.000webhostapp.com/" target="_self">Mi sitio web</a> <!-- Abre en la misma pestaña -->
+        <a href="https://yanndesigner.000webhostapp.com/" target="_blank">Mi sitio web en otra pestaña</a> <!-- Abre en otra pestaña -->
+
+        <a href="pagina2.html">Mandar al otro html</a> <!-- Aquí estamos redireccionando a contenidos locales. -->
     </body>
 </html>
-<!-- -->
+<!-- alt + shift + a-->
+<!--  -->
