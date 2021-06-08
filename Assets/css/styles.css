@@ -1,0 +1,44 @@
+/* Para comprobar que si conectó correctamente podemos poner un color chillante al body */
+/* body{
+    background-color: rgb(192, 192, 192);
+} */
+
+/* Esto afectará a todos los h1 */
+h1{
+    color: purple;
+    text-align: center;
+}
+
+p{
+    font-size: 24px;
+    font-weight: 700; /* Hace referencia al peso de la letra. El valor 400 es la letra estandar. 900 debe ser más negrita*/
+    font-style: italic; /* Italico y oblique son equivalentes. */
+    /* text-decoration: line-through; */ /* Nos tacha el texto */
+    text-decoration: underline red; /* Nos subraya el texto */
+    text-transform: capitalize; /* La primer letra siempre será mayuscula. */
+}
+
+/* Haciendo referencia a la etiqueta div */
+div{
+    height: 300px; /* Asignamos la altura que le daremos */
+    width: 400px; /* Limitamos el ancho a 400px */
+    /* background-color: rgb(223, 223, 223);  Permite poner un color al fondo*/
+/*     background-image: url('../img/Gamer.jpg');
+ */   /*  margin: 20px; */ /* Se refiere al margen, se aplica a los 4 lados*/
+    margin-top: 10px;
+    margin-left: 30px;
+    /* padding es un margen interno del elemento. Margin es un margen para toda la seccion. */
+    padding: 20px;
+}
+/* Arriba definimos propiedades para todos los div, por ejemplo margen, ancho y alto. Acontinuación sólo modificamos el fondo */
+/* Para utilizar clases debemos porner el . Nombre de la clase */
+.uno {
+    background-color: rgb(223, 223, 223);  /* Permite poner un color al fondo */
+    
+}
+
+.dos {
+    background-image: url('../img/Gamer.jpg');
+    background-size: cover;  /* Hace que la imagen se ajuste al div */
+    background-position: center; /* Centra la imagen */
+}

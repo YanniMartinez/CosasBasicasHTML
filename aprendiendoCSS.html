@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Aprendiendo CSS </title>
+        <!-- Nosotros usaremos estilos mediante archivos externos. -->
+        <link rel="stylesheet" href="Assets/css/styles.css"/>
+
+        <!-- Likeamos con la hoja de estilos -->
+        <!-- <style type="text/css">
+            /* Aquí veremos un selector de estilo, en este caso referenciamos al h1. Afectará a todos los h1 del archivo*/
+            h1{
+                color: blue; /* Cambia el color del texto */
+                text-align: center; /* Sirve para alinear el texto */
+            }
+        </style> -->
+    </head>
+    <body>
+        <h1>Aprendiendo CSS3</h1>
+        <!-- Aquí veremos otro tipo para poner estilos, esta manera no es optima cuando agregamos muchas propiedades, por ejemplos 10, hace el codigo sucio -->
+        <!-- <h2 style="color: purple; text-align:center;">Probando otro modo de poner estilos</h2>  --><!-- De entrada este estilo solo afecta a este elemento. Este estilo tiene mayor prioridad-->
+        <p>
+            <strong>Soy un párrafo </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nemo impedit dolores aspernatur soluta id ipsam quisquam ex vel dicta, officia, commodi, accusantium quis voluptates! Impedit itaque ducimus omnis sequi.
+        </p>
+        <div class="uno"> <!-- Aqui agregamos una clase -->
+            Soy un div
+        </div>
+        <div class="uno"> <!-- Aqui repetimos una clase -->
+            Soy un div copia con misma clase
+        </div>
+        <div class="dos">
+            Soy otro div
+        </div>
+    </body>
+</html>
