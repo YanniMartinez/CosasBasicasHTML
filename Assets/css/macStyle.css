@@ -1,9 +1,15 @@
 body{
     background-color: lightgray;
+    /* El color también puede representarse en formato Hexadecimal.
+    #12F5D1 da un color verde 
+    Otra manera es mediante colores RGB 
+    color: rgb(255,0,0); el valor va de 0 a 255 que es el color máximo*/
 }
 /* Esto significa que inmediatamente dentro de Header hay un H1 */
 header > h1{
     /* color: green; */
+    /* Para agregar transparencia usamos RGBA, la transparencia es el ultimo termino, el 1 es el 100% */
+    color: rgba(0, 0, 255, 0.2);
     text-align: center;
     letter-spacing: 10px; /* Es el espaciado que existe entre cada letra */
 }
@@ -15,6 +21,8 @@ header > h1{
 /* Dentro de mi etiqueta main tengo una article, dentro de ella una section */
 main > article > section{
     width: 90%; /* Le indicamos que le damos un ancho del 90% por lo que no usa todo lo de la página */
+    /* También le podemos dar un tamaño en pixeles 
+    widtj: 600px; */
     margin: 0 auto; /* Al hacerlo así especificamos como queremos que se establezcan los margenes. El primer valor hace referencia al margen superior eh inferior. El segundo valor toma a la derecha y a la izquierda */
     /* margin: 20px 10px 15px 50px; Especificamos espacio en sentido de las manecillas, arriba, derecha, abajo e izquierda*/
 

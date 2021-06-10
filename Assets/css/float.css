@@ -1,0 +1,25 @@
+.cajas{
+    max-width: 800px; /* Es el máximo tamaño del ancho que puede ocupar*/
+    /* min-width: 900px;  Es el mínimo que puede tomar*/
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    border: 2px solid black;
+
+}/* Empezando a darle estilo a nuestras cajas */
+
+.caja{
+    /* Estas cajas buscaran como acomodarse en función del ancho que tengamos disponible, esto pasa solo si usamos el float :D */
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: 10px; 
+    border: 5px solid red;
+    /* Para poner una caja a lado de otra ponemos el FLoat */
+    float: left; /* Puede tener 3 valores, El NONE que significa que no tiene flotado, a la izquierda y a la derecha */
+    /* Al usar float siempre nos rompe el el flujo de las cosas, una manera de corregir eso es poniendo directamente una altura al background o poner un div que rompa el flotado*/
+}
+
+.clearfix{
+    float: none; /* Que deje de flotar */
+    clear: both; /* Que limpie ambos lados */
+}

@@ -1,0 +1,65 @@
+.Caja {
+    width: 400px;
+    height: 400px;
+}
+
+.uno{
+    background-color: #FAFA31;
+    margin-bottom: 10px;
+    padding: 20px;
+    /*border: 2px solid black;  El primer valor es el tamaño del borde, el segundo el tipo de borde y el tercero se refiere al color */
+    /* También se puede poner de forma separada: */
+    border-color: color; 
+    border-width: 5px;
+    border-style: solid;/* Solid es linea continua, Dashed son lineas punteadas, dotted son puntitos */
+    border-radius: 10px; /* Permite curvear los bordes */
+    /* También podemos hacer que sólo una esquina se haga curvo
+    border-top-left-radius: 20px; */
+
+}
+
+.dos{
+    background-color: green;
+    border-radius: 50%; /* Este hack permite hacer un circulo  */
+}
+
+/* ***************** ESTO FUE LO QUE YO HICE *********************** */
+ .Cajita{
+    background-color: rgb(83, 83, 83);
+    width: 600px;
+    height: 200px;
+}
+
+.A{
+    border-bottom-right-radius: 45%;
+}
+.B{
+    border-bottom-right-radius: 20%;
+}
+.C{
+    border-bottom-right-radius: 33%;
+}
+.D{
+    border-radius: ;
+}
+.E{
+    border-radius: 10%;
+}
+
+.Cajita >  p{
+    
+    padding: auto;
+    padding-top: 15%;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.F{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgb(83, 83, 83);
+} 
+/* El display Flex siempre se pone al padre. */

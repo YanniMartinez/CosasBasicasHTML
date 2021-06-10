@@ -1,0 +1,37 @@
+/* El display flex funciona del padre a los hijos, cuando cierra la etiqueta regresa el flujo normal*/
+.cajas{
+    max-width: 900px;
+    background-color: lightgray;
+    border: 3px solid black;
+    height: 600px;
+    display: flex;
+    margin: 0 auto; /* Con esto centramos al contenedor grande */
+    /* Con display Flex no se necesita romper el flotado */
+    justify-content: center; /* Con esto alineamos los elementos de forma horizontal */
+    /* Hay distintos valores para  */
+    align-items: center; /* Manda los alinea al centro los elementos justo al centro del contenedor*/
+    /* Para ponerlos en columna ponemos flex-direction: column; */
+    /* Para ponerlos en columna alrevés ponemos flex-direction: column-reverse; */
+    flex-wrap: wrap; /* Permite bajar los elementos y no amontonarlos en un mismo renglón. */
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.roja{
+    background-color: red;
+    /* align-self: baseline; */ /* Lo mandamos a la esquina superior izquierda (Esto es para modificar el orden del elemento)*/
+}
+
+.verde{
+    background-color: green;
+}
+
+.azul{
+    background-color: blue;
+    /* align-self: flex-end; */ /* Lo mandamos a la esquina inferior derecha (Esto es para modificar el orden del elemento) */
+}
